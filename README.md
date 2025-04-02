@@ -41,7 +41,7 @@ Um CRUD simples de gerenciamento de tarefas com frontend em React/Vite e backend
 npm install express mongoose cors body-parser
 
 ### Instalando as dependências no frontend
-npm install react react-dom vite axios react-icon
+npm install react react-dom vite axios react-icons
 
 ### Inicie o Servidor Backend
 npm node index.js
