@@ -1,0 +1,153 @@
+/* frontend/src/pages/TaskList/style.css */
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+h1 {
+    color: #8b4513;
+    font-size: 32px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinhar verticalmente os itens */
+    background-color: #e2aa87;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permitir que a info da tarefa ocupe mais espaço */
+}
+
+.card p {
+    color: #8b4513;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card p span {
+    font-weight: normal;
+}
+
+.card input {
+    border: 1px solid #f8edca;
+    border-radius: 30px;
+    background-color: #edd8bb;
+    color: #8b4513;
+    font-size: 16px;
+    padding: 8px 10px;
+    outline: none;
+    margin-bottom: 10px; /* Mais espaço abaixo do input */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.back-button,
+.save-button,
+.cancel-button {
+    background-color: #a0522d; /* Marrom */
+    color: #f8f0e3; /* Tom de bege claro para o texto */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.back-button {
+    margin-bottom: 20px; /* Manter a margem inferior do botão "Voltar" */
+}
+
+.save-button,
+.cancel-button {
+    padding: 6px 12px; /* Ajustar o padding para os botões menores */
+    font-size: 0.8em;
+}
+
+.back-button:hover,
+.save-button:hover,
+.cancel-button:hover {
+    background-color: #8b4513; /* Marrom chocolate (mais escuro no hover) */
+}
+
+.actions {
+    display: flex; /* Colocar os botões lado a lado */
+    align-items: center; /* Alinhar verticalmente os ícones */
+}
+
+.delete-button {
+    font-size: 1.5em; /* Ajuste o tamanho do ícone */
+    margin-left: 10px; /* Espaço entre os ícones */
+    color: rgb(236, 55, 0); /* Cor dos ícones */
+    cursor: pointer;
+}
+
+.edit-button {
+    font-size: 1.5em; /* Ajuste o tamanho do ícone */
+    margin-left: 10px; /* Espaço entre os ícones */
+    color: #6d6c6c; /* Cor dos ícones */
+    cursor: pointer;
+}
+
+.edit-button,
+.delete-button {
+    background-color: transparent;
+    border: none;
+    padding: 0; /* Remover padding padrão dos botões */
+    cursor: pointer;
+}
+
+.edit-button:hover .action-icon,
+.delete-button:hover .action-icon {
+    opacity: 0.8; /* Feedback ao passar o mouse */
+}
+
+.edit-actions {
+    display: flex; /* Colocar os botões de salvar e cancelar lado a lado */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 10px; /* Espaço acima dos botões */
+}
+
+/* ... outros estilos ... */
+
+.task-info label {
+    color: white;
+    font-weight: bold;
+    display: block; /* Coloca cada label em uma nova linha */
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.task-info label:first-child {
+    margin-top: 0;
+}
+
+.task-info select {
+    border: 1px solid #f8edca;
+    border-radius: 30px;
+    background-color: #edd8bb;
+    color: #8b4513;
+    font-size: 16px;
+    padding: 8px 10px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.task-info select option {
+    color: #333; /* Cor do texto das opções */
+}

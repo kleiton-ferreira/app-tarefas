@@ -1,0 +1,80 @@
+/* frontend/src/pages/Home/style.css */
+
+/* frontend/src/pages/Home/style.css */
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+h1 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #e2aa87;
+  max-width: 50%;
+  width: 400px;
+  margin-bottom: 20px;
+  font-weight: bold;
+
+  & button {
+      border-radius: 30px;
+      background-color: #edd8bb;
+      height: 40px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+  & button:hover {
+      opacity: 0.8;
+  }
+
+  & input,
+  & select { /* Estilo para o input e o select */
+      border: 1px solid #f8edca;
+      border-radius: 30px;
+      background-color: #edd8bb;
+      color: #8b4513;
+      font-size: 16px;
+      padding-left: 10px;
+      outline: none;
+      height: 40px; /* Altura para o select ficar igual ao input */
+  }
+
+  & select option {
+      color: #333; /* Cor do texto das opções do select */
+  }
+}
+
+.list-tasks-button {
+  background-color: #a0522d; /* Marrom */
+  color: #f8f0e3; /* Tom de bege claro para o texto */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+}
+
+.list-tasks-button:hover {
+  background-color: #8b4513;
+}
+
+.success-message {
+  color: #a0522d;
+  font-weight: bold;
+  margin-top: 10px;
+}
