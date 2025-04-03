@@ -43,10 +43,10 @@ npm install express mongoose cors body-parser
 ### Instalando as dependências no frontend
 npm install react react-dom vite axios react-icons
 
-### Inicie o Servidor Backend
+### Inicie o servidor backend no terminal
 npm node index.js
 
-### Inicie o Servidor Frontend
+### Inicie o servidor frontend no terminal
 npm run dev
 
 
